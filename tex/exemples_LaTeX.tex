@@ -1,0 +1,344 @@
+%!TEX encoding = IsoLatin
+
+%
+% Chapitre "Exemples LaTeX"
+%
+
+\chapter{Exemples \LaTeX}
+\label{s:exemples_LaTeX}
+
+Le présent chapitre est plus spécifiquement utilisé pour illustrer les capacités de \LaTeX\ à l'aide de divers exemples. On y traite, entre autres, de plusieurs détails concernant les objets flottants que sont les figures et les tableaux.
+
+
+\section{Outils de références}
+\label{s:ref}
+
+L'ouvrage de \bsc{Knuth}~\cite{KNU84} renferme une mine de renseignements sur le fonctionnement de \TeX. La première référence introduisant \LaTeX\ est évidemment le bouquin de \bsc{Lamport} lui-même~\cite{LAM94}. Finalement \emph{The LaTeX Companion}~\cite{MIT04} constitue un excellent ouvrage général décrivant exhaustivement une sélection des \og packages \fg\ disponibles les plus utiles, de même qu'une foule de détails permettant de modeler \LaTeX\ à sa guise.
+
+
+\section{Exemples d'objets flottants}
+\label{s:ex_obj_flottants}
+
+Deux types d'objets flottants existent à l'intérieur de \LaTeX: les figures et les tableaux. Dans chaque cas, il est essentiel de discerner l'objet fixe représentant l'image ou la grille de l'objet flottant, la figure ou le tableau, respectivement. Chaque objet flottant comporte nominalement un objet fixe, ainsi qu'une légende.
+
+
+\subsection{Exemples de figures}
+\label{s:ex_figures}
+
+\subsubsection{Objet graphique vectoriel de type PDF}
+\label{s:ex_fig_PDF}
+
+La figure~\ref{f:exemple_figure_pdf} fournit un exemple de figure utilisant un fichier vectoriel de type PDF d'\textsc{Adobe}. L'environnement \texttt{figure} y est employé.
+\begin{figure}[htp]
+   \centering
+   \includegraphics[width=0.6\textwidth]{ul_logo}
+   \caption{Exemple de figure faite à partir d'un fichier PDF d'\textsc{Adobe}. Logo de l'Université Laval.}
+   \label{f:exemple_figure_pdf}
+\end{figure}
+
+Les commandes \verb|\centering|, \verb|\includegraphics|, \verb|\caption| et \verb|\label| sont aussi démontrées dans cette figure.
+
+Il est important de noter que la légende, introduite par la commande \verb|\caption|, doit être placée après l'élément graphique (voir aussi le tableau~\ref{t:recommandations_typographiques_legende} à la page~\pageref{t:recommandations_typographiques_legende}).
+
+
+\subsubsection{Objets graphiques binaires de type JPEG}
+\label{s:ex_fig_JPEG}
+
+La figure~\ref{f:exemple_figure_jpeg} (montrée à la page~\pageref{f:exemple_figure_jpeg}) fournit un exemple de figure utilisant un fichier binaire de type JPEG. Le même environnement et les mêmes commandes qu'à la section précédente sont employées.
+\begin{figure}[htp]
+   \centering
+   \includegraphics[width=\textwidth]{radarsat}
+   \caption{Exemple d'une figure conçue à partir d'un fichier JPEG. Représentation artistique du satellite canadien RADARSAT-2.}
+   \label{f:exemple_figure_jpeg}
+\end{figure}
+
+
+\subsection{Exemples de tableaux}
+\label{s:ex_tableaux}
+
+\subsubsection{Tableau simple}
+\label{s:ex_tableau_simple}
+
+Le tableau~\ref{t:prix_materiaux} illustre l'utilisation de l'environnement \texttt{table}. Une grille réalisée à l'aide de l'environnement \texttt{tabular} constitue le c\oe ur de ce tableau.
+
+\begin{table}[htp]
+   \centering
+   \caption{Exemple de tableau. Liste de prix des matériaux de référence au 1 février 2006, telle que fournie par les Laboratoires des mines et des sciences minérales.}
+   \label{t:prix_materiaux}
+   \begin{tabular}{|l|c|r|}
+      \hline\hline
+      \multicolumn{1}{|c|}{\emph{description}}
+      & \emph{unité}
+      & \multicolumn{1}{c|}{\emph{prix}}
+      \\ \hline
+      Minerai d'uranium          & 100 g     & 95,00  \$  \\
+      Minerai d'or               & 200 g     & 180,00  \$  \\
+      Alliages de zinc-aluminium & 7 disques & 1500,00 \$  \\
+      \hline\hline
+   \end{tabular}
+\end{table}
+
+Les commandes \verb|\hline| et \verb|\multicolumn| sont aussi démontrées dans ce tableau.
+
+Il est important de noter que la légende, introduite par la commande \verb|\caption|, doit être placée avant la grille (voir aussi le tableau~\ref{t:recommandations_typographiques_legende} à la page~\pageref{t:recommandations_typographiques_legende}).
+
+
+\subsubsection{Tableau avec cellules multilignes}
+\label{s:ex_tableau_simple2}
+
+Le tableau~\ref{t:exemple_table} est un exemple où certains éléments de la première rangée occupent plus d'une ligne de texte et doivent être centrés verticalement.
+
+\begin{table}[htp]
+   \centering
+   \caption{Exemple de tableau avec cellules multilignes. Illustration de l'usage de la commande \texttt{\textbackslash cellulemultiligne}. Statistiques de contacts satellite-station terrestre pour une période de 10~jours.}
+   \label{t:exemple_table}
+   \begin{tabular}{|c|c|c|c|c|c|}
+      \hline\hline
+      \cellulemultiligne{\emph{station} \\ \emph{terrestre}}
+      & \cellulemultiligne{\emph{nombre} \\ \emph{total de} \\ \emph{contacts}}
+      & \cellulemultiligne{\emph{durée} \\ \emph{totale des} \\ \emph{contacts}}
+      & \cellulemultiligne{\emph{nombre} \\ \emph{moyen de}
+                           \\ \emph{contacts} \\ \emph{par jour}}
+      & \cellulemultiligne{\emph{durée} \\ \emph{moyenne} \\ \emph{des} \\ \emph{contacts}}
+      & \cellulemultiligne{\emph{durée} \\ \emph{moyenne}
+                           \\ \emph{de contact} \\ \emph{par jour}}
+      \\\hline
+      A  & 18  &  64 min    & 1,8  & 3,56 min  &  6,4 min  \\
+      B  & 17  &  56,2 min  & 1,7  & 3,31 min  &  5,6 min  \\
+      C  & 34  & 119 min    & 3,4  & 3,49 min  & 11,9 min  \\
+      D  & 16  &  51,1 min  & 1,6  & 3,19 min  &  5,1 min  \\
+      \hline\hline
+   \end{tabular}
+\end{table}
+
+Un autre environnement \texttt{tabular} y est utilisé pour chacune des cellules multilignes. La nouvelle commande \verb|\cellulemultiligne|, définie dans le préambule, y est d'ailleurs employée explicitement afin de simplifier la rédaction.
+
+
+\subsubsection{Tableau avec cellules contenant un long texte}
+\label{s:ex_tableau_simple3}
+
+Le tableau~\ref{t:exemple_table_texte} démontre l'utilisation d'environnements de type paragraphe à l'intérieur de cellules.
+
+\begin{table}[htp]
+   \centering
+   \caption{Exemple de tableau avec cellules contenant des paragraphes. Illustration de l'usage de \texttt{\textbackslash Z}.}
+   \label{t:exemple_table_texte}
+   \begin{tabular}{|Z{\raggedright}{b}{4cm}|Z{\centering}{m}{4cm}|Z{\raggedleft}{p}{4cm}|}
+      \hline\hline
+      Exemple de texte un peu long, mais typographié sans problème
+         avec positionnement vertical référé en bas!
+      & Exemple de texte un peu long, mais typographié sans problème
+         avec positionnement vertical centré!
+      & Exemple de texte un peu long, mais typographié sans problème
+         avec positionnement vertical référé en haut!
+      \\
+      \hline\hline
+   \end{tabular}
+\end{table}
+
+La nouvelle définition de colonne \verb|\Z|, introduite dans le préambule, y est d'ailleurs employée explicitement afin de simplifier la rédaction. Elle permet de présenter un long texte en définissant sa présentation horizontale (gauche, centre ou droite), sa position verticale de référence (haut, centre, bas) et sa largeur.
+
+
+\subsection{Autres tableaux possibles}
+\label{s:autres_tableaux}
+
+\subsubsection{Tableaux plus larges que le corps du texte}
+
+Si vous désirez faire un tableau plus large, il y a moyen de le faire en utilisant la page en paysage (\og landscape \fg), utilisez alors l'environnement \texttt{sidewaystable} (fourni avec le package \texttt{rotating}). L'exemple qui suit montre comment s'y prendre.
+\begin{verbatim}
+\begin{sidewaystable}
+   \centering
+   \caption{Légende du tableau.}
+   \label{t:etiquette_de_tableau}
+   \begin{tabular}{...}
+      ...
+   \end{tabular}
+\end{sidewaystable}"
+\end{verbatim}
+
+L'environnement \texttt{sidewaysfigure} existe aussi pour les figures plus larges.
+
+
+\subsubsection{Tableaux plus longs qu'une page}
+
+Le package \texttt{longtable} fournit l'environnement \texttt{longtable} qui permet de typographier des tableaux qui parcourent plus d'une page. L'exemple qui suit montre comment s'y prendre.
+\begin{verbatim}
+\begin{longtable}{cc}
+      \caption{Légende du tableau.}
+      \label{t:etiquette_de_tableau}         \\ \hline
+      \emph{colonne 1} & \emph{colonne 2}    \\ \hline
+   \endfirsthead
+      \caption[]{(suite)}                    \\ \hline
+      \emph{colonne 1} & \emph{colonne 2}    \\ \hline
+   \endhead
+      \hline \multicolumn{2}{r}{\emph{Suite à la page suivante}}
+   \endfoot
+      \hline
+   \endlastfoot
+   ... & ... \\
+   ... & ... \\
+\end{longtable}
+\end{verbatim}
+Il est à noter que, contrairement aux tableaux standard requérant \texttt{table} et \texttt{tabular}, un tableau complet (objet flottant et grille, voir \S\ref{s:ex_tableaux}) est réalisé avec l'environnement \texttt{longtable}. Par défaut ce tableau est centré horizontalement, ce qui peut être aisément changé par le biais d'un argument optionnel (\texttt{[l]} ou \texttt{[r]}). Un exemple de l'utilisation de ce type de tableau est fourni au tableau~\ref{t:longtable_example}.
+
+
+\begin{longtable}{lcc}
+      \caption{Les 100~premiers éléments du tableau périodique classés par ordre alphabétique.}
+      \label{t:longtable_example}
+      \\ \hline
+      \multicolumn{1}{c}{%
+         \cellulemultiligne{\emph{nom de} \\ \emph{l'élément} \\ \emph{chimique}}}
+      & \emph{symbole}
+      & \cellulemultiligne{\emph{nombre} \\ \emph{atomique}}
+      \\ \hline
+   \endfirsthead
+      \caption[]{(suite)}
+      \\ \hline
+      \multicolumn{1}{c}{%
+         \cellulemultiligne{\emph{nom de} \\ \emph{l'élément} \\ \emph{chimique}}}
+      & \emph{symbole}
+      & \cellulemultiligne{\emph{nombre} \\ \emph{atomique}}
+      \\ \hline
+   \endhead
+      \hline \multicolumn{3}{r}{\emph{Suite à la page suivante}}
+   \endfoot
+      \hline
+   \endlastfoot
+   actinium       & Ac  & 89  \\
+   aluminum       & Al  & 13  \\
+   américium      & Am  & 95  \\
+   antimoine      & Sb  & 51  \\
+   argent         & Ag  & 47  \\
+   argon          & Ar  & 18  \\
+   arsenic        & As  & 33  \\
+   astate         & At  & 85  \\
+   azote          & N   & 7   \\
+   baryum         & Ba  & 56  \\
+   berkélium      & Bk  & 97  \\
+   béryllium      & Be  & 4   \\
+   bismuth        & Bi  & 83  \\
+%   Bohrium        & Bh  & 107 \\
+   bore           & B   & 5   \\
+   brome          & Br  & 35  \\
+   cadmium        & Cd  & 48  \\
+   calcium        & Ca  & 20  \\
+   californium    & Cf  & 98  \\
+   carbone        & C   & 6   \\
+   cérium         & Ce  & 58  \\
+   césium         & Cs  & 55  \\
+   chlore         & Cl  & 17  \\
+   chrome         & Cr  & 24  \\
+   cobalt         & Co  & 27  \\
+   cuivre         & Cu  & 29  \\
+   curium         & Cm  & 96  \\
+%   Darmstadtium   & Ds  & 110 \\
+%   Dubnium        & Db  & 105 \\
+   dysprosium     & Dy  & 66  \\
+   einsteinium    & Es  & 99  \\
+   erbium         & Er  & 68  \\
+   étain          & Sn  & 50  \\
+   europium       & Eu  & 63  \\
+   fer            & Fe  & 26  \\
+   fermium        & Fm  & 100 \\
+   fluor          & F   & 9   \\
+   francium       & Fr  & 87  \\
+   gadolinium     & Gd  & 64  \\
+   gallium        & Ga  & 31  \\
+   germanium      & Ge  & 32  \\
+   hafnium        & Hf  & 72  \\
+%   Hassium        & Hs  & 108 \\
+   hélium         & He  & 2   \\
+   holmium        & Ho  & 67  \\
+   hydrogène      & H   & 1   \\
+   indium         & In  & 49  \\
+   iode           & I   & 53  \\
+   iridium        & Ir  & 77  \\
+   krypton        & Kr  & 36  \\
+   lanthane       & La  & 57  \\
+   lawrencium     & Lr  & 103 \\
+   lithium        & Li  & 3   \\
+   lutécium       & Lu  & 71  \\
+   magnésium      & Mg  & 12  \\
+   manganèse      & Mn  & 25  \\
+%   Meitnerium     & Mt  & 109 \\
+%   mendélévium    & Md  & 101 \\
+   mercure        & Hg  & 80  \\
+   molybdène      & Mo  & 42  \\
+   néodyme        & Nd  & 60  \\
+   néon           & Ne  & 10  \\
+   neptunium      & Np  & 93  \\
+   nickel         & Ni  & 28  \\
+   niobium        & Nb  & 41  \\
+%   nobélium       & No  & 102 \\
+   osmium         & Os  & 76  \\
+   or             & Au  & 79  \\
+   oxygène        & O   & 8   \\
+   palladium      & Pd  & 46  \\
+   phosphore      & P   & 15  \\
+   platine        & Pt  & 78  \\
+   plomb          & Pb  & 82  \\
+   plutonium      & Pu  & 94  \\
+   polonium       & Po  & 84  \\
+   potassium      & K   & 19  \\
+   praséodyme     & Pr  & 59  \\
+   prométhium     & Pm  & 61  \\
+   protactinium   & Pa  & 91  \\
+   radium         & Ra  & 88  \\
+   radon          & Rn  & 86  \\
+   rhénium        & Re  & 75  \\
+   rhodium        & Rh  & 45  \\
+   rubidium       & Rb  & 37  \\
+   ruthénium      & Ru  & 44  \\
+%   Rutherfordium  & Rf  & 104 \\
+   samarium       & Sm  & 62  \\
+   scandium       & Sc  & 21  \\
+%   Seaborgium     & Sg  & 106 \\
+   sélénium       & Se  & 34  \\
+   silicium       & Si  & 14  \\
+   sodium         & Na  & 11  \\
+   soufre         & S   & 16  \\
+   strontium      & Sr  & 38  \\
+   tantale        & Ta  & 73  \\
+   technétium     & Tc  & 43  \\
+   tellure        & Te  & 52  \\
+   terbium        & Tb  & 65  \\
+   thallium       & Tl  & 81  \\
+   thorium        & Th  & 90  \\
+   thulium        & Tm  & 69  \\
+   titane         & Ti  & 22  \\
+   tungstène      & W   & 74  \\
+%   Ununbium       & Uub & 112 \\
+%   Ununhexium     & Uuh & 116 \\
+%   Ununoctium     & Uuo & 118 \\
+%   Ununpentium    & Uup & 115 \\
+%   Ununquadium    & Uuq & 114 \\
+%   Ununseptium    & Uus & 117 \\
+%   Ununtrium      & Uut & 113 \\
+%   Ununium        & Uuu & 111 \\
+   uranium        & U   & 92  \\
+   vanadium       & V   & 23  \\
+   xénon          & Xe  & 54  \\
+   ytterbium      & Yb  & 70  \\
+   yttrium        & Y   & 39  \\
+   zinc           & Zn  & 30  \\
+   zirconium      & Zr  & 40  \\
+\end{longtable}
+
+Les différentes sections permettent de spécifier le haut du tableau à la première page (avant \verb|\endfirsthead|), puis le haut du tableau aux pages subséquentes (avant \verb|\endhead|). De même il faut aussi indiquer le bas du tableau à sa dernière page (avant \verb|\endlastfoot|), ainsi qu'aux pages précédentes (avant \verb|\endfoot|).
+
+Il est tout à fait proscrit d'utiliser \texttt{longtable} pour des tableaux qui peuvent être présentés sur une seule page. En effet, il serait inopportun de scinder un tel tableau en deux parties.
+
+
+\section{Ouvrages cités et URL}
+
+Puisque Internet fournit maintenant de nombreux documents de référence, il importe de pouvoir citer les sites web correctement afin de permettre au lecteur d'y référer. Des règles d'écriture de telles références bibliographiques sont décrites sur le site de la bibliothèque~\cite{BIB07}. En particulier, ce dernier site suggère d'utiliser le format suivant pour référer correctement à un site web:
+\begin{flushleft}\ttfamily
+Auteur (Organisme ou auteur personnel dans le cas d'une page personnelle). \emph{Titre de la page d'accueil}, [Type de support]. Adresse URL: fournir l'adresse URL de la ressource (date de la consultation par l'usager: jour, mois, année)
+\end{flushleft}
+La référence~\cite{BIB07} du présent document en est un excellent exemple.
+
+
+
+
+
+

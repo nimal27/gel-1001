@@ -1,0 +1,15 @@
+# fichiers temporaires de compilation
+*.aux
+*.log
+*.lot
+*.toc
+*.lof
+*.blg
+*.bbl
+*.pdf
+*.dvi
+out/
+
+# autres
+.idea/
+
