@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet" company="" webLink="http://" view-date="2021-01-21" view-index="0" gantt-divider-location="501" resource-divider-location="300" version="2.8.11" locale="fr">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="180" order="0"/>
+        <field id="tpd4" name="Date de début" width="120" order="1"/>
+        <field id="tpd5" name="Date de fin" width="118" order="2"/>
+        <field id="tpd8" name="Responsable" width="81" order="3"/>
+        <option id="color.recent">
+            <![CDATA[#ff0033 #ff0000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="211" order="0"/>
+        <field id="1" name="Rôle par défaut" width="87" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-27" duration="61" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
+            <task id="2" name="Gestion" meeting="false" start="2021-01-27" duration="15" complete="0" expand="true">
+                <task id="3" name="G03" meeting="false" start="2021-01-27" duration="5" complete="0" expand="true">
+                    <depend id="6" type="2" difference="0" hardness="Strong"/>
+                    <task id="9" name="Remise" color="#ff0000" meeting="true" start="2021-02-03" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="4" name="OJ03" meeting="false" start="2021-01-27" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="6" name="G04" meeting="false" start="2021-02-03" duration="5" complete="0" expand="true">
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    <task id="14" name="Remise" color="#ff0033" meeting="true" start="2021-02-10" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="8" name="OJ04" color="#8cb6ce" meeting="false" start="2021-02-04" duration="1" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="12" name="PV03" meeting="false" start="2021-02-03" duration="1" complete="0" expand="true"/>
+                    <task id="13" name="Gantt" meeting="false" start="2021-02-03" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="17" name="G05" meeting="false" start="2021-02-10" duration="5" complete="0" expand="true">
+                    <task id="25" name="Remise" color="#ff0033" meeting="true" start="2021-02-17" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="19" name="OJ05" meeting="false" start="2021-02-10" duration="1" complete="0" expand="true"/>
+                    <task id="21" name="PV04" meeting="false" start="2021-02-10" duration="1" complete="0" expand="true"/>
+                    <task id="23" name="Gantt" meeting="false" start="2021-02-10" duration="1" complete="0" expand="true"/>
+                </task>
+            </task>
+            <task id="26" name="Rapport" meeting="false" start="2021-01-27" duration="61" complete="0" expand="true">
+                <task id="27" name="Rapport V0" meeting="false" start="2021-01-27" duration="6" complete="0" expand="true">
+                    <depend id="34" type="2" difference="0" hardness="Strong"/>
+                    <task id="31" name="Remise" color="#ff0033" meeting="true" start="2021-02-04" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="28" name="MaTâche_1" meeting="false" start="2021-01-27" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="34" name="Rapport V1" meeting="false" start="2021-02-04" duration="15" complete="0" expand="true">
+                    <depend id="44" type="2" difference="0" hardness="Strong"/>
+                    <task id="40" name="Remise" color="#ff0033" meeting="true" start="2021-02-25" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="36" name="MaTâche_1" meeting="false" start="2021-02-04" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="44" name="Rapport V2" color="#000000" meeting="false" start="2021-02-25" duration="20" complete="0" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
+                    <depend id="56" type="2" difference="0" hardness="Strong"/>
+                    <task id="46" name="Remise" color="#ff0033" meeting="true" start="2021-03-25" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="48" name="Tache 1" meeting="false" start="2021-02-25" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="56" name="Rapport V3" color="#000000" meeting="false" start="2021-03-25" duration="20" complete="0" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
+                    <task id="58" name="Remise" color="#ff0033" meeting="true" start="2021-04-22" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="60" name="Tache 2" meeting="false" start="2021-03-25" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="41" name="Exposé oral" meeting="false" start="2021-04-22" duration="0" complete="0" expand="true">
+                    <task id="42" name="Présentation" color="#ff0033" meeting="true" start="2021-04-22" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
