@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Projet" company="" webLink="http://" view-date="2021-01-26" view-index="0" gantt-divider-location="657" resource-divider-location="355" version="2.8.11" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet" company="" webLink="http://" view-date="2021-01-26" view-index="0" gantt-divider-location="657" resource-divider-location="355" version="3.0.3002" locale="fr_FR">
     <description/>
     <view zooming-state="default:1" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="339" order="0"/>
+        <field id="tpd3" name="Nom" width="338" order="0"/>
         <field id="tpd4" name="Date de début" width="75" order="1"/>
         <field id="tpd5" name="Date de fin" width="66" order="2"/>
-        <field id="tpd8" name="Responsable" width="158" order="3"/>
-        <option id="taskLabelLeft" value="resources"/>
-        <option id="color.recent"><![CDATA[#ebb345 #f5f6f7 #ff0033 #ff0000]]></option>
+        <field id="tpd8" name="Responsable" width="157" order="3"/>
+        <option id="color.recent">
+            <![CDATA[#ebb345 #f5f6f7 #ff0033 #ff0000]]>
+        </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="237" order="0"/>
-        <field id="1" name="Rôle par défaut" width="114" order="1"/>
+        <field id="0" name="Nom" width="236" order="0"/>
+        <field id="1" name="Rôle par défaut" width="113" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -36,16 +37,16 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-28" duration="60" complete="31" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
-            <task id="2" name="Gestion" meeting="false" start="2021-02-02" duration="11" complete="42" expand="true">
-                <task id="3" name="G03" meeting="false" start="2021-02-02" duration="1" complete="50" expand="true">
+        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-28" duration="60" complete="36" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
+            <task id="2" name="Gestion" meeting="false" start="2021-02-02" duration="11" complete="58" expand="true">
+                <task id="3" name="G03" meeting="false" start="2021-02-02" duration="1" complete="100" expand="true">
                     <depend id="6" type="2" difference="0" hardness="Strong"/>
                     <task id="9" name="Remise" color="#ff0000" meeting="true" start="2021-02-03" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
                     <task id="4" name="OJ03" color="#8cb6ce" meeting="false" start="2021-02-02" duration="1" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
                         <depend id="12" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
-                <task id="6" name="G04" meeting="false" start="2021-02-05" duration="3" complete="83" expand="true">
+                <task id="6" name="G04" meeting="false" start="2021-02-05" duration="3" complete="100" expand="true">
                     <depend id="85" type="2" difference="0" hardness="Strong"/>
                     <task id="14" name="Remise" color="#ff0033" meeting="true" start="2021-02-10" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
                     <task id="140" name="OJ04" color="#8cb6ce" meeting="false" start="2021-02-08" duration="1" complete="100" thirdDate="2021-02-03" thirdDate-constraint="0" expand="true">
@@ -72,8 +73,8 @@
                     <task id="112" name="Valider l'orthographe avec Antidote" color="#8cb6ce" meeting="false" start="2021-02-16" duration="1" complete="0" thirdDate="2021-02-10" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
-            <task id="26" name="Rapport" meeting="false" start="2021-01-28" duration="60" complete="30" expand="true">
-                <task id="27" name="Rapport V0" meeting="false" start="2021-01-28" duration="6" complete="85" expand="true">
+            <task id="26" name="Rapport" meeting="false" start="2021-01-28" duration="60" complete="23" expand="true">
+                <task id="27" name="Rapport V0" meeting="false" start="2021-01-28" duration="6" complete="100" expand="true">
                     <depend id="34" type="2" difference="0" hardness="Strong"/>
                     <task id="31" name="Remise" color="#ff0033" meeting="true" start="2021-02-04" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
                     <task id="80" name="Rédaction" meeting="false" start="2021-01-28" duration="6" complete="100" expand="true">
@@ -84,7 +85,7 @@
                     </task>
                 </task>
                 <task id="164" name="Corriger les fautes grâce aux commentaires" color="#8cb6ce" meeting="false" start="2021-02-11" duration="5" complete="0" thirdDate="2021-01-26" thirdDate-constraint="0" expand="true"/>
-                <task id="34" name="Rapport V1" meeting="false" start="2021-02-05" duration="14" complete="23" expand="true">
+                <task id="34" name="Rapport V1" meeting="false" start="2021-02-05" duration="14" complete="25" expand="true">
                     <depend id="44" type="2" difference="0" hardness="Strong"/>
                     <task id="40" name="Remise" color="#ff0033" meeting="true" start="2021-02-25" duration="0" complete="0" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
                     <task id="78" name="Rédaction" meeting="false" start="2021-02-05" duration="14" complete="25" expand="true">
@@ -143,6 +144,7 @@
         <allocation task-id="68" resource-id="2" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="28" resource-id="2" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="149" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="93" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="68" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="28" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="140" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
@@ -156,7 +158,6 @@
         <allocation task-id="162" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="68" resource-id="5" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="28" resource-id="5" function="Default:0" responsible="false" load="20.0"/>
-        <allocation task-id="93" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="13" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="164" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="68" resource-id="6" function="Default:0" responsible="false" load="20.0"/>
