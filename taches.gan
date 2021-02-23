@@ -36,8 +36,8 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-28" duration="60" complete="33" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
-            <task id="2" name="Gestion" meeting="false" start="2021-02-02" duration="16" complete="50" expand="true">
+        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-28" duration="60" complete="37" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
+            <task id="2" name="Gestion" meeting="false" start="2021-02-02" duration="16" complete="70" expand="true">
                 <task id="3" name="G03" meeting="false" start="2021-02-02" duration="1" complete="100" expand="true">
                     <depend id="6" type="2" difference="0" hardness="Strong"/>
                     <task id="9" name="Remise" color="#ff0000" meeting="true" start="2021-02-03" duration="0" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
@@ -62,6 +62,7 @@
                     <task id="162" name="Valider l'orthographe avec Antidote" color="#8cb6ce" meeting="false" start="2021-02-09" duration="1" complete="100" thirdDate="2021-02-10" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
                 </task>
                 <task id="85" name="G05" color="#000000" meeting="false" start="2021-02-12" duration="3" complete="100" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
+                    <depend id="193" type="2" difference="0" hardness="Strong"/>
                     <task id="87" name="Remise" color="#ff0033" meeting="true" start="2021-02-17" duration="0" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
                     <task id="89" name="OJ05" color="#8cb6ce" meeting="false" start="2021-02-15" duration="1" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
                     <task id="91" name="PV04" color="#8cb6ce" meeting="false" start="2021-02-12" duration="1" complete="100" thirdDate="2021-02-03" thirdDate-constraint="0" expand="true">
@@ -72,14 +73,14 @@
                     <task id="93" name="Gantt" color="#8cb6ce" meeting="false" start="2021-02-15" duration="2" complete="100" thirdDate="2021-02-03" thirdDate-constraint="0" expand="true"/>
                     <task id="112" name="Valider l'orthographe avec Antidote" color="#8cb6ce" meeting="false" start="2021-02-16" duration="1" complete="100" thirdDate="2021-02-10" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="193" name="G06" meeting="false" start="2021-02-15" duration="7" complete="0" expand="true">
+                <task id="193" name="G06" color="#000000" meeting="false" start="2021-02-19" duration="3" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true">
                     <task id="207" name="Remise" color="#ff0000" meeting="true" start="2021-02-24" duration="0" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
-                    <task id="229" name="Gantt" color="#8cb6ce" meeting="false" start="2021-02-16" duration="2" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
-                    <task id="251" name="PV05" color="#8cb6ce" meeting="false" start="2021-02-15" duration="1" complete="0" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
+                    <task id="229" name="Gantt" color="#8cb6ce" meeting="false" start="2021-02-22" duration="2" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
+                    <task id="251" name="PV05" color="#8cb6ce" meeting="false" start="2021-02-19" duration="1" complete="0" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
                         <depend id="216" type="2" difference="0" hardness="Strong"/>
                         <depend id="229" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="216" name="OJ06" color="#8cb6ce" meeting="false" start="2021-02-16" duration="1" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
+                    <task id="216" name="OJ06" color="#8cb6ce" meeting="false" start="2021-02-22" duration="1" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
             <task id="26" name="tâche_194" meeting="false" start="2021-01-28" duration="60" complete="29" expand="true">
