@@ -189,8 +189,8 @@
         <allocation task-id="28" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="140" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="166" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="229" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="277" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="3" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="277" resource-id="3" function="Default:0" responsible="true" load="50.0"/>
         <allocation task-id="68" resource-id="4" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="28" resource-id="4" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="103" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
