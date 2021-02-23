@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Projet" company="" webLink="http://" view-date="2021-01-28" view-index="0" gantt-divider-location="762" resource-divider-location="355" version="2.8.11" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet" company="" webLink="http://" view-date="2021-02-06" view-index="0" gantt-divider-location="762" resource-divider-location="355" version="2.8.11" locale="fr">
     <description/>
     <view zooming-state="default:1" id="gantt-chart">
         <field id="tpd3" name="Nom" width="314" order="0"/>
@@ -36,8 +36,8 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-28" duration="60" complete="28" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
-            <task id="2" name="Gestion" meeting="false" start="2021-01-28" duration="20" complete="25" expand="true">
+        <task id="0" name="Projet" color="#8cb6ce" meeting="false" start="2021-01-28" duration="60" complete="33" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
+            <task id="2" name="Gestion" meeting="false" start="2021-02-02" duration="16" complete="50" expand="true">
                 <task id="3" name="G03" meeting="false" start="2021-02-02" duration="1" complete="100" expand="true">
                     <depend id="6" type="2" difference="0" hardness="Strong"/>
                     <task id="9" name="Remise" color="#ff0000" meeting="true" start="2021-02-03" duration="0" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true"/>
@@ -67,15 +67,19 @@
                     <task id="91" name="PV04" color="#8cb6ce" meeting="false" start="2021-02-12" duration="1" complete="100" thirdDate="2021-02-03" thirdDate-constraint="0" expand="true">
                         <depend id="89" type="2" difference="0" hardness="Strong"/>
                         <depend id="93" type="2" difference="0" hardness="Strong"/>
-                        <depend id="194" type="2" difference="0" hardness="Strong"/>
+                        <depend id="251" type="2" difference="0" hardness="Rubber"/>
                     </task>
                     <task id="93" name="Gantt" color="#8cb6ce" meeting="false" start="2021-02-15" duration="2" complete="100" thirdDate="2021-02-03" thirdDate-constraint="0" expand="true"/>
                     <task id="112" name="Valider l'orthographe avec Antidote" color="#8cb6ce" meeting="false" start="2021-02-16" duration="1" complete="100" thirdDate="2021-02-10" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="193" name="G06" meeting="false" start="2021-01-28" duration="20" complete="0" expand="true">
-                    <task id="194" name="Gant" color="#8cb6ce" meeting="false" start="2021-02-15" duration="2" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
-                    <task id="207" name="Remise" color="#ff0000" meeting="false" start="2021-02-24" duration="1" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
-                    <task id="216" name="OJ06" meeting="false" start="2021-01-28" duration="1" complete="0" expand="true"/>
+                <task id="193" name="G06" meeting="false" start="2021-02-15" duration="7" complete="0" expand="true">
+                    <task id="207" name="Remise" color="#ff0000" meeting="true" start="2021-02-24" duration="0" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
+                    <task id="229" name="Gantt" color="#8cb6ce" meeting="false" start="2021-02-16" duration="2" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
+                    <task id="251" name="PV05" color="#8cb6ce" meeting="false" start="2021-02-15" duration="1" complete="0" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
+                        <depend id="216" type="2" difference="0" hardness="Strong"/>
+                        <depend id="229" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="216" name="OJ06" color="#8cb6ce" meeting="false" start="2021-02-16" duration="1" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
             <task id="26" name="tâche_194" meeting="false" start="2021-01-28" duration="60" complete="29" expand="true">
@@ -169,11 +173,12 @@
         <allocation task-id="149" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="93" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="74" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="216" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="68" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="28" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="140" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="166" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="194" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="68" resource-id="4" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="28" resource-id="4" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="103" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
@@ -189,6 +194,7 @@
         <allocation task-id="13" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="164" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="74" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="251" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="68" resource-id="6" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="28" resource-id="6" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="143" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
